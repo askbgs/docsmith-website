@@ -2,7 +2,7 @@
 
 Landing page (`/`), privacy policy (`/privacy`) and a 404 page, served by a dependency-free
 Node server (`server.js`). The trial form posts to the n8n webhook
-`https://n8n.srv834342.hstgr.cloud/webhook/docsmith-trial`.
+`https://n8n.srv834342.hstgr.cloud/webhook-test/docsmith-trial` (test URL; switch to `/webhook/` after publishing the n8n workflow).
 
 ## Run locally
 ```bash

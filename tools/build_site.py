@@ -125,11 +125,8 @@ page = page.replace('[sales@yourdomain]', EMAIL).replace('[support@yourdomain]',
 page = page.replace('href="[PRIVACY URL]"', 'href="/privacy"')
 page = page.replace('href="[DOCS URL]"', 'href="' + GUIDE + '" target="_blank" rel="noopener"')
 page = page.replace('href="[PORTAL URL]"', 'href="' + DOWNLOADS + '" target="_blank" rel="noopener"')
-# no demo yet: the hero button goes to pricing, the footer link is dropped
-page = page.replace('<a href="[DEMO URL]" style="display: inline-flex; align-items: center; min-height: 50px;',
-                    '<a href="#pricing" style="display: inline-flex; align-items: center; min-height: 50px;')
-page = page.replace('>Try the live demo</a>', '>See pricing</a>')
-page = re.sub(r'\s*<a href="\[DEMO URL\]"[^>]*>Live demo</a>', '', page)
+# live demo: the in-browser designer at /demo
+page = page.replace('href="[DEMO URL]"', 'href="/demo"')
 page = re.sub(r'\s*<a href="\[TERMS URL\]"[^>]*>[^<]*</a>', '', page)
 page = re.sub(r'\s*<a href="\[LINKEDIN URL\]"[^>]*>LinkedIn</a>', '', page)
 page = re.sub(r'\s*<a href="https://wa.me/\[YOUR NUMBER\]"[^>]*>WhatsApp \[\+94 XX XXX XXXX\]</a>', '', page)
@@ -166,7 +163,7 @@ head = '''<!doctype html>
 script = '''
 <script>
 (function () {
-  var WEBHOOK = 'https://n8n.srv834342.hstgr.cloud/webhook/docsmith-trial';
+  var WEBHOOK = 'https://n8n.srv834342.hstgr.cloud/webhook-test/docsmith-trial';   // TEST url: change to /webhook/ after publishing the workflow
   var form = document.getElementById('trial-form');
   var thanks = document.getElementById('trial-thanks');
   if (!form) return;

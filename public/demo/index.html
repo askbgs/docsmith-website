@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live demo – Docsmith report designer for Oracle APEX</title>
+<meta name="description" content="Try the Docsmith report designer in your browser: edit invoices, payslips, letters and forms with sample data, preview and print. No sign-up.">
+<link rel="icon" type="image/svg+xml" href="/assets/docsmith-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@700&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/demo/static/rpt-designer.css">
+<style>
+  html,body{margin:0;height:100%;background:#dfe4ea;font:13px Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  .bar{display:flex;align-items:center;gap:12px;padding:0 16px;background:#0b1220;color:#cbd5e1;height:52px;box-sizing:border-box}
+  .brand{display:flex;align-items:center;gap:8px;color:#fff;text-decoration:none}
+  .brand img{width:28px;height:28px;display:block}
+  .brand b{font:700 17px 'Space Grotesk',Inter,sans-serif;letter-spacing:-.01em}
+  .tag{padding:2px 9px;border-radius:999px;border:1px solid #334155;color:#c7d2fe;font-size:12px;font-weight:600}
+  .bar label{display:flex;align-items:center;gap:6px;color:#94a3b8}
+  .bar select,.bar .btn{font:500 13px Inter,sans-serif;min-height:32px;padding:0 10px;border-radius:8px;border:1px solid #334155;background:#111827;color:#fff;cursor:pointer}
+  .bar .note{color:#94a3b8;font-size:12px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bar .cta{flex:none;display:inline-flex;align-items:center;min-height:34px;padding:0 14px;border-radius:9px;background:#4f46e5;color:#fff;font-weight:600;text-decoration:none}
+  .bar .cta:hover{background:#4338ca}
+  #rpt-designer{height:calc(100vh - 52px);border-radius:0;border:0}
+  .small-screen{display:none;padding:28px 22px;font:15px/1.6 Inter,sans-serif;color:#0f172a;background:#fff}
+  .small-screen a{color:#4338ca;font-weight:600}
+  .tip{position:fixed;right:16px;bottom:44px;z-index:50;max-width:340px;background:#0b1220;color:#e2e8f0;border-radius:14px;padding:14px 16px;font:13px/1.5 Inter,sans-serif;box-shadow:0 18px 40px rgba(15,23,42,.3)}
+  .tip b{color:#fff}.tip button{margin-top:8px;font:600 12px Inter,sans-serif;border:0;border-radius:7px;padding:6px 10px;background:#4f46e5;color:#fff;cursor:pointer}
+  @media (max-width:900px){#rpt-designer,.tip,.bar label,#reset{display:none}.small-screen{display:block}.bar .note{visibility:hidden}}
+</style>
+</head>
+<body>
+<div class="bar">
+  <a class="brand" href="/"><img src="/assets/docsmith-logo.svg" alt=""><b>Docsmith</b></a>
+  <span class="tag">Live demo</span>
+  <label>Report <select id="pick" style="max-width:240px" aria-label="Choose a sample report"></select></label>
+  <button type="button" class="btn" id="reset" title="Discard your changes and restore the sample reports">Reset demo</button>
+  <span class="note">Runs in your browser with sample data. In APEX the same designer uses your SQL and page items.</span>
+  <a class="cta" href="/#trial">Start free trial</a>
+</div>
+<div class="small-screen">
+  <p><b>The designer needs a larger screen.</b> Open this page on a laptop or desktop to edit reports with drag and drop.</p>
+  <p><a href="/">Back to Docsmith</a> · <a href="/#trial">Get the 30-day trial</a></p>
+</div>
+<div id="rpt-designer"></div>
+<div class="tip" id="tip" hidden>
+  <b>Welcome to the Docsmith demo.</b><br>
+  Drag fields from the left onto the page, click any element to change it on the right, then press <b>Preview</b>. Pick other samples (payslip, letters, stock list…) from the <b>Report</b> menu. Your changes stay in this browser only.
+  <br><button type="button" id="tip-ok">Got it</button>
+</div>
+<script src="/demo/static/rpt-engine.js"></script>
+<script src="/demo/static/rpt-designer.js"></script>
+<script src="/demo/static/samples.js"></script>
+<script src="/demo/static/templates.js"></script>
+<script src="/demo/static/rpt-mock.js"></script>
+<script>
+  (function () {
+    var pick = document.getElementById('pick');
+    var params = new URLSearchParams(location.search);
+    var id = params.has('id') ? params.get('id') : '1';
+    RptMock.list().forEach(function (r) {
+      var o = document.createElement('option'); o.value = r.id; o.textContent = r.code + ' – ' + r.name;
+      if (String(r.id) === id) o.selected = true; pick.appendChild(o);
+    });
+    var n = document.createElement('option'); n.value = ''; n.textContent = '+ New report'; if (id === '') n.selected = true; pick.appendChild(n);
+    pick.onchange = function () { location.search = '?id=' + pick.value; };
+    document.getElementById('reset').onclick = function () { if (confirm('Discard your changes and restore the sample reports?')) { RptMock.reset(); location.search = '?id=1'; } };
+
+    var tip = document.getElementById('tip');
+    try { if (!localStorage.getItem('docsmith-demo-tip')) tip.hidden = false; } catch (e) { tip.hidden = false; }
+    document.getElementById('tip-ok').onclick = function () { tip.hidden = true; try { localStorage.setItem('docsmith-demo-tip', '1'); } catch (e) {} };
+
+    function trialOnly(what) {
+      alert(what + ' files are created by the Docsmith render server, which runs on your own server (or ours) after you install the trial.\n\nIn this demo, use Preview or PDF (browser print).');
+      return Promise.resolve();
+    }
+    window.designer = RptDesigner.init({
+      el: '#rpt-designer',
+      reportId: id || null,
+      ajax: RptMock.ajax,
+      listUrl: '/',
+      // the demo has no render server: "PDF" renders in the browser and opens the print dialog
+      serverPdf: function (code) {
+        return RptMock.payload(code).then(function (p) {
+          return RptEngine.renderAsync(p.layout, p.data).then(function (res) { RptDesigner.printHtml(res); });
+        });
+      },
+      serverDoc: function (code, format) { return trialOnly(format === 'XLSX' ? 'Excel' : 'Word'); },
+      onSaved: function (r) { if (!id) history.replaceState(null, '', '?id=' + r.id); }
+    });
+  })();
+</script>
+</body>
+</html>

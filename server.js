@@ -20,13 +20,13 @@ const TYPES = {
   '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp',
   '.ico': 'image/x-icon', '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.json': 'application/json'
 };
-const ROUTES = { '/': 'index.html', '/privacy': 'privacy.html' };
+const ROUTES = { '/': 'index.html', '/privacy': 'privacy.html', '/demo': 'demo/index.html', '/demo/': 'demo/index.html' };
 const REDIRECTS = { '/index.html': '/', '/privacy.html': '/privacy', '/privacy-policy': '/privacy' };
 
 const SECURITY = {
   'Content-Security-Policy': [
     "default-src 'self'",
-    "img-src 'self' data:",
+    "img-src 'self' data: blob:",
     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
     "font-src https://fonts.gstatic.com",
     "script-src 'self' 'unsafe-inline'",
