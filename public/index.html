@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Docsmith – visual PDF, Word and Excel report designer for Oracle APEX</title>
+<meta name="description" content="Design pixel-perfect invoices, payslips, letters and forms visually inside Oracle APEX. PDF, Word and Excel output, Tamil and Sinhala support, runs on your own servers. 30-day free trial.">
+<link rel="canonical" href="/">
+<meta property="og:title" content="Docsmith – report designer for Oracle APEX">
+<meta property="og:description" content="Pixel-perfect PDF, Word and Excel documents, designed visually inside APEX. 30-day free trial.">
+<meta property="og:image" content="/assets/designer.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="/assets/docsmith-logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/app-icon-32.png">
+<link rel="apple-touch-icon" href="/assets/app-icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#4338ca}a:hover{color:#312e81}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+details[open] .ds-chev{transform:rotate(180deg)}
+input:focus,select:focus,textarea:focus{outline:2px solid #a5b4fc;outline-offset:1px;border-color:#4f46e5}
+</style>
+<style>html{scroll-behavior:smooth;scroll-padding-top:80px}img{max-width:100%}[hidden]{display:none!important}@media (max-width:720px){header nav>div{display:none!important}header nav>a:last-child{margin-left:auto}}</style>
+</head>
+<body>
+<div style="font-family: Inter, system-ui, sans-serif; color: #0f172a; background: #ffffff; line-height: 1.55; font-size: 16px">
+
+  <!-- ============ NAV ============ -->
+  <header style="position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,0.94); border-bottom: 1px solid #e8ebf2; backdrop-filter: blur(8px)">
+    <nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; gap: 24px; flex-wrap: wrap">
+      <a href="#top" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #0f172a">
+        <img src="/assets/docsmith-logo.svg" alt="" style="width: 36px; height: 36px; display: block">
+        <span style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: 21px; letter-spacing: -0.01em">Docsmith</span>
+      </a>
+      <div style="display: flex; gap: 22px; flex-wrap: wrap; margin-left: auto; font-size: 15px; font-weight: 500">
+        <a href="#features" style="color: #334155; text-decoration: none">Features</a>
+        <a href="#how" style="color: #334155; text-decoration: none">How it works</a>
+        <a href="#compare" style="color: #334155; text-decoration: none">vs BI Publisher</a>
+        <a href="#pricing" style="color: #334155; text-decoration: none">Pricing</a>
+        <a href="#faq" style="color: #334155; text-decoration: none">FAQ</a>
+        <a href="#contact" style="color: #334155; text-decoration: none">Contact</a>
+      </div>
+      <a href="#trial" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 10px; background: #4f46e5; color: #ffffff; font-weight: 600; font-size: 15px; text-decoration: none">Start free trial</a>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" style="background: #0b1220; color: #ffffff">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 0; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px">
+      <p style="margin: 0; display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; border: 1px solid #334155; color: #c7d2fe; font-size: 14px; font-weight: 600">Report designer for Oracle APEX</p>
+      <h1 style="margin: 0; max-width: 920px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: clamp(36px, 5.2vw, 62px); line-height: 1.06; letter-spacing: -0.025em; font-weight: 700">Design pixel-perfect PDF, Word and Excel documents visually, right inside APEX.</h1>
+      <p style="margin: 0; max-width: 720px; font-size: 19px; color: #cbd5e1">Invoices, payslips, letters, claim forms and stock lists built with drag and drop on your own SQL, printed from any APEX page with one plug-in, and your data never leaves your servers.</p>
+      <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 6px">
+        <a href="#trial" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 12px; background: #4f46e5; color: #ffffff; font-weight: 600; font-size: 16px; text-decoration: none">Start your 30-day free trial</a>
+        <a href="#pricing" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 12px; border: 1px solid #475569; color: #ffffff; font-weight: 600; font-size: 16px; text-decoration: none">See pricing</a>
+      </div>
+      <p style="margin: 0; font-size: 14px; color: #94a3b8">All features in the trial · no credit card · installs in under an hour</p>
+      <div style="width: 100%; max-width: 1100px; margin-top: 34px; border-radius: 16px 16px 0 0; overflow: hidden; border: 1px solid #1e293b; border-bottom: 0; background: #111827">
+        <div style="display: flex; align-items: center; gap: 7px; padding: 11px 14px; background: #1e293b">
+          <span style="width: 11px; height: 11px; border-radius: 50%; background: #475569"></span>
+          <span style="width: 11px; height: 11px; border-radius: 50%; background: #475569"></span>
+          <span style="width: 11px; height: 11px; border-radius: 50%; background: #475569"></span>
+          <span style="margin-left: 12px; font-size: 12px; color: #94a3b8">Docsmith designer: Sales Invoice</span>
+        </div>
+        <img src="/assets/designer.jpg" width="2160" height="1154" fetchpriority="high" alt="The Docsmith designer with an invoice layout: element palette on the left, the page with header, detail and summary bands in the middle, properties on the right" style="width: 100%; height: auto; display: block">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUILT FOR ============ -->
+  <section style="border-bottom: 1px solid #eef0f5; background: #f8fafc">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 26px 24px; display: flex; flex-wrap: wrap; gap: 10px 28px; align-items: center; justify-content: center; font-size: 15px; color: #475569">
+      <span style="font-weight: 600; color: #0f172a">Built for the documents every business prints:</span>
+      <span>Invoices &amp; quotations</span><span>Payslips</span><span>HR letters</span><span>Claim forms</span><span>Stock &amp; sales lists</span><span>Certificates</span><span>Delivery notes</span>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section id="features" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 40px">
+    <div style="max-width: 720px; margin: 0 auto 48px; text-align: center">
+      <p style="margin: 0 0 10px; color: #4f46e5; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase">Features</p>
+      <h2 style="margin: 0 0 14px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 40px; line-height: 1.12; letter-spacing: -0.02em">Everything a document needs, nothing to install on users' PCs</h2>
+      <p style="margin: 0; color: #475569; font-size: 18px">A designer your APEX developers learn in an afternoon, and a print engine that produces the same result every time.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px">
+      
+        <article style="border: 1px solid #e5e7eb; border-radius: 16px; padding: 22px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+          <span style="width: 42px; height: 42px; border-radius: 11px; background: #eef2ff; color: #4338ca; display: grid; place-items: center">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h7v7H4zM13 4h7v4h-7zM13 10h7v10h-7zM4 13h7v7H4z"></path></svg>
+          </span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 700">Drag-and-drop designer</h3>
+          <p style="margin: 0; color: #475569; font-size: 15px">Bands, groups, tables, images and fields on your own SQL, in millimetres, with live preview. No Word templates.</p>
+        </article>
+      
+        <article style="border: 1px solid #e5e7eb; border-radius: 16px; padding: 22px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+          <span style="width: 42px; height: 42px; border-radius: 11px; background: #eef2ff; color: #4338ca; display: grid; place-items: center">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M8 13h8M8 17h5"></path></svg>
+          </span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 700">PDF, Word and Excel</h3>
+          <p style="margin: 0; color: #475569; font-size: 15px">One layout, three outputs: print-exact PDF, an editable .docx with the same layout, and an .xlsx of the data.</p>
+        </article>
+      
+        <article style="border: 1px solid #e5e7eb; border-radius: 16px; padding: 22px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+          <span style="width: 42px; height: 42px; border-radius: 11px; background: #eef2ff; color: #4338ca; display: grid; place-items: center">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h8M8 3v2M5.5 5c1 4 3.5 6.5 6.5 7.5M10.5 5c-.8 3.6-3 6.5-6.5 8M13 21l4-10 4 10M14.5 17.5h5"></path></svg>
+          </span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 700">Tamil, Sinhala and English</h3>
+          <p style="margin: 0; color: #475569; font-size: 15px">Full Unicode with proper fonts embedded, so trilingual letters and forms print correctly everywhere.</p>
+        </article>
+      
+        <article style="border: 1px solid #e5e7eb; border-radius: 16px; padding: 22px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+          <span style="width: 42px; height: 42px; border-radius: 11px; background: #eef2ff; color: #4338ca; display: grid; place-items: center">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V4h3M18 4h3v3M21 17v3h-3M6 20H3v-3M7 8v8M10 8v8M13 8v8M17 8v8"></path></svg>
+          </span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 700">Barcodes and QR codes</h3>
+          <p style="margin: 0; color: #475569; font-size: 15px">Code 128 and QR from any field, such as invoice numbers, payment links or a verify URL, sharp in PDF and Word.</p>
+        </article>
+      
+        <article style="border: 1px solid #e5e7eb; border-radius: 16px; padding: 22px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+          <span style="width: 42px; height: 42px; border-radius: 11px; background: #eef2ff; color: #4338ca; display: grid; place-items: center">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6zM9 12l2 2 4-4"></path></svg>
+          </span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 700">Watermarks and conditions</h3>
+          <p style="margin: 0; color: #475569; font-size: 15px">DRAFT, COPY or CONFIDENTIAL on chosen pages, and any band or element printed only when a condition is true.</p>
+        </article>
+      
+        <article style="border: 1px solid #e5e7eb; border-radius: 16px; padding: 22px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+          <span style="width: 42px; height: 42px; border-radius: 11px; background: #eef2ff; color: #4338ca; display: grid; place-items: center">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v4M15 3v4M7 7h10v4a5 5 0 0 1-10 0zM12 16v5"></path></svg>
+          </span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 700">Plug-ins for your apps</h3>
+          <p style="margin: 0; color: #475569; font-size: 15px">A dynamic action and a process plug-in, plus PL/SQL and REST, so a button on any page prints, e-mails or stores the file.</p>
+        </article>
+      
+        <article style="border: 1px solid #e5e7eb; border-radius: 16px; padding: 22px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+          <span style="width: 42px; height: 42px; border-radius: 11px; background: #eef2ff; color: #4338ca; display: grid; place-items: center">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 2M3.05 11a9 9 0 1 1 .5 4M3 4v5h5"></path></svg>
+          </span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 700">Owners, versions, publishing</h3>
+          <p style="margin: 0; color: #475569; font-size: 15px">Private or shared reports, version history with restore, draft and published states, and a log of every run.</p>
+        </article>
+      
+        <article style="border: 1px solid #e5e7eb; border-radius: 16px; padding: 22px; background: #ffffff; display: flex; flex-direction: column; gap: 10px">
+          <span style="width: 42px; height: 42px; border-radius: 11px; background: #eef2ff; color: #4338ca; display: grid; place-items: center">
+            <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v6H4zM4 13h16v6H4zM8 8h.01M8 16h.01"></path></svg>
+          </span>
+          <h3 style="margin: 0; font-size: 17px; font-weight: 700">Runs on your servers</h3>
+          <p style="margin: 0; color: #475569; font-size: 15px">Render server on Windows, Linux or Docker. Data stays in your database: built for banks, telcos and government.</p>
+        </article>
+      
+    </div>
+  </section>
+
+  <!-- ============ OUTPUT SHOWCASE ============ -->
+  <section style="max-width: 1200px; margin: 0 auto; padding: 56px 24px 96px">
+    <div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+      <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+        <p style="margin: 0; color: #4f46e5; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase">Real output</p>
+        <h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 38px; line-height: 1.12; letter-spacing: -0.02em">Print-ready on the first try</h2>
+        <p style="margin: 0; color: #475569; font-size: 17px">Repeating headers, groups with subtotals, page X of Y, amounts in words, barcodes and scannable QR codes, with English, தமிழ் and සිංහල on the same page.</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 16px">
+          <li style="display: flex; gap: 10px"><span style="color: #059669; font-weight: 700">✓</span>PDF from the render server, identical every time</li>
+          <li style="display: flex; gap: 10px"><span style="color: #059669; font-weight: 700">✓</span>Word (.docx) with the same layout, editable</li>
+          <li style="display: flex; gap: 10px"><span style="color: #059669; font-weight: 700">✓</span>Excel (.xlsx) with real numbers and dates</li>
+          <li style="display: flex; gap: 10px"><span style="color: #059669; font-weight: 700">✓</span>DRAFT / COPY watermarks on a condition</li>
+        </ul>
+      </div>
+      <div style="flex: 1 1 520px; min-width: 0; display: flex; gap: 18px; align-items: flex-start">
+        <img src="/assets/invoice.jpg" loading="lazy" alt="A printed sales invoice with logo, line items grouped by category, totals, amount in words and a QR code" style="flex: 1 1 0; min-width: 0; width: 100%; height: auto; border-radius: 10px; border: 1px solid #e5e7eb; box-shadow: 0 18px 40px rgba(15,23,42,0.12)">
+        <img src="/assets/payslip.jpg" loading="lazy" alt="A printed payslip with earnings and deductions side by side" style="flex: 1 1 0; min-width: 0; width: 100%; height: auto; margin-top: 64px; border-radius: 10px; border: 1px solid #e5e7eb; box-shadow: 0 18px 40px rgba(15,23,42,0.12)">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="how" style="background: #f8fafc; border-top: 1px solid #eef0f5; border-bottom: 1px solid #eef0f5">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+      <div style="max-width: 720px; margin: 0 auto 48px; text-align: center">
+        <p style="margin: 0 0 10px; color: #4f46e5; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase">How it works</p>
+        <h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 40px; line-height: 1.12; letter-spacing: -0.02em">From SQL to a finished document in three steps</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px">
+        
+          <article style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 12px">
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #0b1220; color: #ffffff; display: grid; place-items: center; font-weight: 700">1</span>
+            <h3 style="margin: 0; font-size: 19px">Design</h3>
+            <p style="margin: 0; color: #475569; font-size: 15px">Add a SQL data source, drag fields onto bands, format, preview with real data, publish.</p>
+            <pre style="margin: 4px 0 0; padding: 14px; border-radius: 10px; background: #0b1220; color: #e2e8f0; font: 13px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-x: auto">select inv_no, customer, amount
+  from invoices
+ where id = :INVOICE_ID</pre>
+          </article>
+        
+          <article style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 12px">
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #0b1220; color: #ffffff; display: grid; place-items: center; font-weight: 700">2</span>
+            <h3 style="margin: 0; font-size: 19px">Connect</h3>
+            <p style="margin: 0; color: #475569; font-size: 15px">Add the Print Report plug-in to a button and map page items to report parameters.</p>
+            <pre style="margin: 4px 0 0; padding: 14px; border-radius: 10px; background: #0b1220; color: #e2e8f0; font: 13px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-x: auto">Action:  Docsmith - Print Report
+Report:  INVOICE
+Items:   P10_INVOICE_ID
+Output:  Download PDF</pre>
+          </article>
+        
+          <article style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 12px">
+            <span style="width: 36px; height: 36px; border-radius: 50%; background: #0b1220; color: #ffffff; display: grid; place-items: center; font-weight: 700">3</span>
+            <h3 style="margin: 0; font-size: 19px">Print, e-mail or store</h3>
+            <p style="margin: 0; color: #475569; font-size: 15px">Users click, the file arrives. Or call it from PL/SQL and jobs for bulk runs and e-mail.</p>
+            <pre style="margin: 4px 0 0; padding: 14px; border-radius: 10px; background: #0b1220; color: #e2e8f0; font: 13px/1.6 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-x: auto">l_pdf := rpt_api.get_document(
+  &#x27;INVOICE&#x27;, &#x27;{&quot;INVOICE_ID&quot;:42}&#x27;);</pre>
+          </article>
+        
+      </div>
+      <p style="margin: 28px 0 0; text-align: center; color: #475569; font-size: 15px">The render server runs on your Windows or Linux server, or in Docker. Reports, SQL and data stay in your Oracle database.</p>
+    </div>
+  </section>
+
+  <!-- ============ COMPARISON ============ -->
+  <section id="compare" style="max-width: 1100px; margin: 0 auto; padding: 96px 24px">
+    <div style="max-width: 720px; margin: 0 auto 40px; text-align: center">
+      <p style="margin: 0 0 10px; color: #4f46e5; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase">Docsmith vs BI Publisher</p>
+      <h2 style="margin: 0 0 14px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 40px; line-height: 1.12; letter-spacing: -0.02em">Built for APEX teams, not for a separate BI stack</h2>
+      <p style="margin: 0; color: #475569; font-size: 17px">No Word template plug-in, no RTF debugging, no extra middleware tier to license and patch.</p>
+    </div>
+    <div style="overflow-x: auto; border: 1px solid #e5e7eb; border-radius: 16px">
+      <table style="width: 100%; min-width: 640px; border-collapse: collapse; font-size: 15px">
+        <thead>
+          <tr style="background: #f8fafc; text-align: left">
+            <th scope="col" style="padding: 14px 18px; font-weight: 600; color: #475569; width: 34%">&#160;</th>
+            <th scope="col" style="padding: 14px 18px; font-weight: 700; color: #0f172a">Docsmith</th>
+            <th scope="col" style="padding: 14px 18px; font-weight: 600; color: #475569">Oracle BI Publisher</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr style="border-top: 1px solid #eef0f5">
+              <th scope="row" style="padding: 13px 18px; text-align: left; font-weight: 600">Where you design</th>
+              <td style="padding: 13px 18px; color: #065f46">In the browser, inside APEX</td>
+              <td style="padding: 13px 18px; color: #475569">Word with the BI Publisher add-in (RTF)</td>
+            </tr>
+          
+            <tr style="border-top: 1px solid #eef0f5">
+              <th scope="row" style="padding: 13px 18px; text-align: left; font-weight: 600">Data source</th>
+              <td style="padding: 13px 18px; color: #065f46">Your SQL and APEX page items</td>
+              <td style="padding: 13px 18px; color: #475569">Data models and data sets in BI</td>
+            </tr>
+          
+            <tr style="border-top: 1px solid #eef0f5">
+              <th scope="row" style="padding: 13px 18px; text-align: left; font-weight: 600">Infrastructure</th>
+              <td style="padding: 13px 18px; color: #065f46">One small render server (or Docker)</td>
+              <td style="padding: 13px 18px; color: #475569">WebLogic / BI middleware tier</td>
+            </tr>
+          
+            <tr style="border-top: 1px solid #eef0f5">
+              <th scope="row" style="padding: 13px 18px; text-align: left; font-weight: 600">Calling it from APEX</th>
+              <td style="padding: 13px 18px; color: #065f46">Ready-made plug-ins, PL/SQL and REST</td>
+              <td style="padding: 13px 18px; color: #475569">Report queries / web-service calls</td>
+            </tr>
+          
+            <tr style="border-top: 1px solid #eef0f5">
+              <th scope="row" style="padding: 13px 18px; text-align: left; font-weight: 600">Output</th>
+              <td style="padding: 13px 18px; color: #065f46">PDF, Word, Excel</td>
+              <td style="padding: 13px 18px; color: #475569">PDF, Word, Excel, HTML and more</td>
+            </tr>
+          
+            <tr style="border-top: 1px solid #eef0f5">
+              <th scope="row" style="padding: 13px 18px; text-align: left; font-weight: 600">Tamil and Sinhala</th>
+              <td style="padding: 13px 18px; color: #065f46">Fonts built in, works out of the box</td>
+              <td style="padding: 13px 18px; color: #475569">Font mapping configuration needed</td>
+            </tr>
+          
+            <tr style="border-top: 1px solid #eef0f5">
+              <th scope="row" style="padding: 13px 18px; text-align: left; font-weight: 600">Learning curve</th>
+              <td style="padding: 13px 18px; color: #065f46">An afternoon for an APEX developer</td>
+              <td style="padding: 13px 18px; color: #475569">RTF templates and XSL skills</td>
+            </tr>
+          
+            <tr style="border-top: 1px solid #eef0f5">
+              <th scope="row" style="padding: 13px 18px; text-align: left; font-weight: 600">Cost</th>
+              <td style="padding: 13px 18px; color: #065f46">Yearly licence per instance</td>
+              <td style="padding: 13px 18px; color: #475569">Part of the Oracle BI licence</td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section id="pricing" style="background: #0b1220; color: #ffffff">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+      <div style="max-width: 720px; margin: 0 auto 44px; text-align: center">
+        <p style="margin: 0 0 10px; color: #a5b4fc; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase">Pricing</p>
+        <h2 style="margin: 0 0 14px; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 40px; line-height: 1.12; letter-spacing: -0.02em">One licence per APEX instance. Every designer included.</h2>
+        <p style="margin: 0; color: #cbd5e1; font-size: 17px">Try everything for 30 days. Keep using it with a yearly licence that includes updates and support.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; align-items: stretch">
+        
+          <article style="border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 16px; background: #111827; border: 1px solid #1f2937;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+              <h3 style="margin: 0; font-size: 20px">Trial</h3>
+              
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #94a3b8;">Every feature for 30 days, to prove it on your own reports.</p>
+            <p style="margin: 0; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 38px; font-weight: 700; letter-spacing: -0.02em">Free</span><span style="font-size: 15px; color: #94a3b8;">30 days</span></p>
+            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px; font-size: 15px; flex: 1">
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #a5b4fc;">✓</span><span>PDF, Word and Excel output</span></li>
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #a5b4fc;">✓</span><span>All designer features and templates</span></li>
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #a5b4fc;">✓</span><span>Plug-ins, PL/SQL and REST API</span></li>
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #a5b4fc;">✓</span><span>E-mail help with the install</span></li>
+              
+            </ul>
+            <a href="#trial" style="display: inline-flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 12px; font-weight: 600; text-decoration: none; border: 1px solid #475569; color: #ffffff;">Start free trial</a>
+          </article>
+        
+          <article style="border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 16px; background: #4f46e5; border: 1px solid #4f46e5;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+              <h3 style="margin: 0; font-size: 20px">Pro</h3>
+              
+                <span style="padding: 4px 10px; border-radius: 999px; background: #ffffff; color: #3730a3; font-size: 12px; font-weight: 700">Most popular</span>
+              
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #e0e7ff;">For one production APEX instance and its test copies.</p>
+            <p style="margin: 0; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 38px; font-weight: 700; letter-spacing: -0.02em">USD 1,200</span><span style="font-size: 15px; color: #e0e7ff;">per instance / year</span></p>
+            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px; font-size: 15px; flex: 1">
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #ffffff;">✓</span><span>Unlimited reports and designers</span></li>
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #ffffff;">✓</span><span>PDF, Word and Excel, no watermark</span></li>
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #ffffff;">✓</span><span>One render server, on-premise or hosted</span></li>
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #ffffff;">✓</span><span>Updates and new features for the year</span></li>
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #ffffff;">✓</span><span>E-mail support, next business day</span></li>
+              
+            </ul>
+            <a href="#trial" style="display: inline-flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 12px; font-weight: 600; text-decoration: none; background: #ffffff; color: #1e1b4b;">Buy Pro</a>
+          </article>
+        
+          <article style="border-radius: 18px; padding: 28px; display: flex; flex-direction: column; gap: 16px; background: #111827; border: 1px solid #1f2937;">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+              <h3 style="margin: 0; font-size: 20px">Enterprise</h3>
+              
+            </div>
+            <p style="margin: 0; font-size: 15px; color: #94a3b8;">For groups with several instances and strict SLAs.</p>
+            <p style="margin: 0; display: flex; align-items: baseline; gap: 8px"><span style="font-family: 'Space Grotesk', Inter, sans-serif; font-size: 38px; font-weight: 700; letter-spacing: -0.02em">USD 3,900</span><span style="font-size: 15px; color: #94a3b8;">from, per year</span></p>
+            <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 9px; font-size: 15px; flex: 1">
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #a5b4fc;">✓</span><span>Any number of APEX instances</span></li>
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #a5b4fc;">✓</span><span>Several render servers, high availability</span></li>
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #a5b4fc;">✓</span><span>Priority support with an SLA</span></li>
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #a5b4fc;">✓</span><span>Help converting BI Publisher reports</span></li>
+              
+                <li style="display: flex; gap: 10px"><span style="font-weight: 700; color: #a5b4fc;">✓</span><span>Training for your developers</span></li>
+              
+            </ul>
+            <a href="#contact" style="display: inline-flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 12px; font-weight: 600; text-decoration: none; border: 1px solid #475569; color: #ffffff;">Contact sales</a>
+          </article>
+        
+      </div>
+      <div style="margin: 30px auto 0; max-width: 860px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center">
+        <p style="margin: 0; flex: 1 1 260px; padding: 14px 18px; border-radius: 14px; border: 1px solid #1f2937; background: #111827; font-size: 14px; color: #cbd5e1"><b style="color: #ffffff">Founding customers:</b> 30% off the first year for our first 5 customers, in return for a short case study.</p>
+        <p style="margin: 0; flex: 1 1 260px; padding: 14px 18px; border-radius: 14px; border: 1px solid #1f2937; background: #111827; font-size: 14px; color: #cbd5e1"><b style="color: #ffffff">Hosted render server:</b> from USD 30 / month if you prefer not to run your own.</p>
+        <p style="margin: 0; flex: 1 1 260px; padding: 14px 18px; border-radius: 14px; border: 1px solid #1f2937; background: #111827; font-size: 14px; color: #cbd5e1"><b style="color: #ffffff">Sri Lanka:</b> local pricing in LKR on request. Perpetual licences available for government and banks.</p>
+      </div>
+      <p style="margin: 18px 0 0; text-align: center; color: #94a3b8; font-size: 14px">Prices in US dollars, excluding taxes. Test and UAT instances are added to the same key at no extra cost.</p>
+    </div>
+  </section>
+
+  <!-- ============ TRIAL FORM ============ -->
+  <section id="trial" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+    <div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+      <div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+        <p style="margin: 0; color: #4f46e5; font-weight: 700; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase">Free trial</p>
+        <h2 style="margin: 0; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 40px; line-height: 1.12; letter-spacing: -0.02em">Get Docsmith in your inbox</h2>
+        <p style="margin: 0; color: #475569; font-size: 17px">Fill in the form and we e-mail you the download links (APEX app, plug-ins, render server for Windows, Linux or Docker) and the step-by-step install guide.</p>
+        <ol style="margin: 8px 0 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; color: #334155; font-size: 16px">
+          <li>Import the APEX app: it installs its own tables and packages</li>
+          <li>Start the render server and point Docsmith at it</li>
+          <li>Design your first report; all features are on for 30 days</li>
+        </ol>
+        <p style="margin: 8px 0 0; color: #475569; font-size: 15px">Prefer to talk first? E-mail <a href="mailto:bgowryshangar@gmail.com">bgowryshangar@gmail.com</a>.</p>
+      </div>
+      <div style="flex: 1 1 480px; min-width: 0; border: 1px solid #e5e7eb; border-radius: 18px; padding: 28px; box-shadow: 0 18px 40px rgba(15,23,42,0.07); background: #ffffff">
+        
+          <div role="status" id="trial-thanks" hidden style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start; padding: 12px 0">
+            <span style="width: 48px; height: 48px; border-radius: 14px; background: #ecfdf5; color: #059669; display: grid; place-items: center">
+              <svg aria-hidden="true" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+            </span>
+            <h3 style="margin: 0; font-size: 22px">Thanks<span id="trial-name"></span>! Check your inbox.</h3>
+            <p style="margin: 0; color: #475569">The download links and the install guide are on their way to <b id="trial-email"></b>. Not there in 5 minutes? Look in your spam folder or e-mail us.</p>
+            <button type="button" id="trial-again" style="min-height: 44px; padding: 0 16px; border-radius: 10px; border: 1px solid #d6dbe4; background: #ffffff; font: 600 15px Inter, sans-serif; color: #0f172a; cursor: pointer">Send another request</button>
+          </div>
+        
+        
+          <form id="trial-form" novalidate style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #334155">Full name
+              <input name="name" required autocomplete="name" style="min-height: 44px; padding: 0 12px; border: 1px solid #cbd5e1; border-radius: 10px; font: 15px Inter, sans-serif; color: #0f172a">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #334155">Company
+              <input name="company" required autocomplete="organization" style="min-height: 44px; padding: 0 12px; border: 1px solid #cbd5e1; border-radius: 10px; font: 15px Inter, sans-serif; color: #0f172a">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #334155">Work e-mail
+              <input name="email" type="email" required autocomplete="email" style="min-height: 44px; padding: 0 12px; border: 1px solid #cbd5e1; border-radius: 10px; font: 15px Inter, sans-serif; color: #0f172a">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #334155">Phone / WhatsApp
+              <input name="phone" type="tel" autocomplete="tel" placeholder="+94 …" style="min-height: 44px; padding: 0 12px; border: 1px solid #cbd5e1; border-radius: 10px; font: 15px Inter, sans-serif; color: #0f172a">
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #334155">APEX version
+              <select name="apex" style="min-height: 44px; padding: 0 10px; border: 1px solid #cbd5e1; border-radius: 10px; font: 15px Inter, sans-serif; color: #0f172a; background: #ffffff">
+                <option>26.1 or later</option><option>24.x (older)</option><option>23.x or earlier</option><option>Not sure</option>
+              </select>
+            </label>
+            <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #334155">Render server on
+              <select name="server" style="min-height: 44px; padding: 0 10px; border: 1px solid #cbd5e1; border-radius: 10px; font: 15px Inter, sans-serif; color: #0f172a; background: #ffffff">
+                <option>Windows server</option><option>Linux / Docker</option><option>Hosted by Docsmith</option><option>Not decided</option>
+              </select>
+            </label>
+            <label style="grid-column: 1 / -1; display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #334155">Which documents do you want to build? (optional)
+              <textarea name="message" rows="3" placeholder="e.g. invoices, payslips, HR letters" style="padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 10px; font: 15px Inter, sans-serif; color: #0f172a; resize: vertical"></textarea>
+            </label>
+            <label style="grid-column: 1 / -1; display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: #475569">
+              <input type="checkbox" name="consent" required style="width: 18px; height: 18px; margin-top: 2px; accent-color: #4f46e5">
+              I agree that Docsmith may e-mail me the trial and contact me about it. See the <a href="/privacy">privacy policy</a>.
+            </label>
+            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0">
+            <button type="submit" style="grid-column: 1 / -1; min-height: 50px; border: 0; border-radius: 12px; background: #4f46e5; color: #ffffff; font: 600 16px Inter, sans-serif; cursor: pointer">Send me the download links</button>
+          </form>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" style="background: #f8fafc; border-top: 1px solid #eef0f5">
+    <div style="max-width: 860px; margin: 0 auto; padding: 96px 24px">
+      <h2 style="margin: 0 0 32px; text-align: center; font-family: 'Space Grotesk', Inter, sans-serif; font-size: 40px; line-height: 1.12; letter-spacing: -0.02em">Questions teams ask</h2>
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        
+          <details style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 0 20px">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; font-weight: 600; font-size: 16px">Which APEX and database versions are supported?
+              <svg class="ds-chev" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; transition: transform .2s"><path d="M6 9l6 6 6-6"></path></svg>
+            </summary>
+            <p style="margin: 0 0 18px; color: #475569; font-size: 15px">Oracle APEX 26.1 or later on Oracle Database 19c or later, on-premise or in the cloud (OCI, Autonomous Database with network access to the render server).</p>
+          </details>
+        
+          <details style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 0 20px">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; font-weight: 600; font-size: 16px">Where does our data go?
+              <svg class="ds-chev" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; transition: transform .2s"><path d="M6 9l6 6 6-6"></path></svg>
+            </summary>
+            <p style="margin: 0 0 18px; color: #475569; font-size: 15px">Nowhere outside your network if you host the render server yourself. The database sends one report’s data to it, it returns the file and keeps nothing.</p>
+          </details>
+        
+          <details style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 0 20px">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; font-weight: 600; font-size: 16px">Can we run the render server on Windows?
+              <svg class="ds-chev" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; transition: transform .2s"><path d="M6 9l6 6 6-6"></path></svg>
+            </summary>
+            <p style="margin: 0 0 18px; color: #475569; font-size: 15px">Yes. A ready Windows package installs as a service and uses the Edge or Chrome already on the server. Linux and Docker images are available too.</p>
+          </details>
+        
+          <details style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 0 20px">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; font-weight: 600; font-size: 16px">What happens when the trial ends?
+              <svg class="ds-chev" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; transition: transform .2s"><path d="M6 9l6 6 6-6"></path></svg>
+            </summary>
+            <p style="margin: 0 0 18px; color: #475569; font-size: 15px">Nothing breaks. PDFs get a TRIAL watermark and Word / Excel export pauses until you enter a licence key on the License page. No reinstall is needed.</p>
+          </details>
+        
+          <details style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 0 20px">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; font-weight: 600; font-size: 16px">Can we move our BI Publisher reports?
+              <svg class="ds-chev" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; transition: transform .2s"><path d="M6 9l6 6 6-6"></path></svg>
+            </summary>
+            <p style="margin: 0 0 18px; color: #475569; font-size: 15px">Most are rebuilt in Docsmith in less time than an RTF fix takes. Enterprise includes help with converting your existing reports.</p>
+          </details>
+        
+          <details style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 0 20px">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; font-weight: 600; font-size: 16px">Do test and UAT instances need their own licence?
+              <svg class="ds-chev" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; transition: transform .2s"><path d="M6 9l6 6 6-6"></path></svg>
+            </summary>
+            <p style="margin: 0 0 18px; color: #475569; font-size: 15px">No. Send us their Instance IDs and we add them to your production key.</p>
+          </details>
+        
+          <details style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 0 20px">
+            <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; font-weight: 600; font-size: 16px">Do you offer support and training?
+              <svg class="ds-chev" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; transition: transform .2s"><path d="M6 9l6 6 6-6"></path></svg>
+            </summary>
+            <p style="margin: 0 0 18px; color: #475569; font-size: 15px">Every paid licence includes updates and e-mail support. Enterprise adds an SLA, priority fixes and developer training.</p>
+          </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / FOOTER ============ -->
+  <footer id="contact" style="background: #0b1220; color: #cbd5e1">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px 32px; display: flex; flex-direction: column; gap: 40px">
+      <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between">
+        <div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <img src="/assets/docsmith-logo.svg" alt="" style="width: 40px; height: 40px; display: block">
+            <span style="font-family: 'Space Grotesk', Inter, sans-serif; font-weight: 700; font-size: 23px; color: #ffffff">Docsmith</span>
+          </div>
+          <p style="margin: 0; max-width: 380px; font-size: 15px">The visual report designer for Oracle APEX. Built in Sri Lanka by Oracle APEX and EBS specialists.</p>
+        </div>
+        <div style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px">
+          <h3 style="margin: 0 0 4px; color: #ffffff; font-size: 15px">Talk to us</h3>
+          <a href="mailto:bgowryshangar@gmail.com" style="color: #c7d2fe">bgowryshangar@gmail.com</a>
+          <span>Sri Lanka</span>
+        </div>
+        <div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px">
+          <h3 style="margin: 0 0 4px; color: #ffffff; font-size: 15px">Product</h3>
+          <a href="#features" style="color: #c7d2fe">Features</a>
+          <a href="#pricing" style="color: #c7d2fe">Pricing</a>
+          <a href="https://drive.google.com/file/d/15j_RliRsON7jLr6F3n4nDyIJ9zrw7fb-/view" target="_blank" rel="noopener" style="color: #c7d2fe">Documentation</a>
+        </div>
+        <div style="flex: 1 1 200px; min-width: 0; display: flex; flex-direction: column; gap: 10px; font-size: 15px">
+          <h3 style="margin: 0 0 4px; color: #ffffff; font-size: 15px">Customers</h3>
+          <a href="mailto:bgowryshangar@gmail.com" style="color: #c7d2fe">Support</a>
+          <a href="https://drive.google.com/drive/folders/1zkcE62UhsYtb12w--aUBu2SkMbH20Jx5" target="_blank" rel="noopener" style="color: #c7d2fe">Downloads &amp; licences</a>
+          <a href="/privacy" style="color: #c7d2fe">Privacy policy</a>
+        </div>
+      </div>
+      <div style="border-top: 1px solid #1e293b; padding-top: 22px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; font-size: 13px; color: #94a3b8">
+        <span>© 2026 Docsmith. Docsmith is not affiliated with Oracle Corporation.</span>
+        <span>Oracle, APEX and BI Publisher are trademarks of Oracle and/or its affiliates.</span>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+(function () {
+  var WEBHOOK = 'https://n8n.srv834342.hstgr.cloud/webhook/docsmith-trial';
+  var form = document.getElementById('trial-form');
+  var thanks = document.getElementById('trial-thanks');
+  if (!form) return;
+  var btn = form.querySelector('button[type=submit]');
+  var err = document.createElement('p');
+  err.setAttribute('role', 'alert');
+  err.style.cssText = 'grid-column:1/-1;margin:0;color:#b42318;font-size:14px';
+  form.appendChild(err);
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    err.textContent = '';
+    if (!form.reportValidity()) return;
+    var data = {};
+    new FormData(form).forEach(function (v, k) { data[k] = v; });
+    btn.disabled = true; btn.textContent = 'Sending…';
+    fetch(WEBHOOK, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+      .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok || j.ok === false) throw new Error(j.error || 'Request failed'); return j; }); })
+      .then(function () {
+        document.getElementById('trial-name').textContent = data.name ? ', ' + String(data.name).split(' ')[0] : '';
+        document.getElementById('trial-email').textContent = data.email;
+        form.hidden = true; thanks.hidden = false; thanks.scrollIntoView({ block: 'center' });
+      })
+      .catch(function (x) { err.textContent = (x && x.message && x.message !== 'Request failed' ? x.message + ' ' : '') + 'Sorry, that did not go through. Please try again or e-mail bgowryshangar@gmail.com.'; })
+      .then(function () { btn.disabled = false; btn.textContent = 'Send me the download links'; });
+  });
+  document.getElementById('trial-again').addEventListener('click', function () { form.reset(); thanks.hidden = true; form.hidden = false; });
+})();
+</script>
+</body>
+</html>

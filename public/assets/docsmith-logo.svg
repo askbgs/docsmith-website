@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Docsmith">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset=".6" stop-color="#6d28d9"/>
+      <stop offset="1" stop-color="#9333ea"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".78" cy=".8" r=".55">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e0e7ff"/>
+    </linearGradient>
+    <linearGradient id="head" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fde68a"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="handle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#92400e"/>
+      <stop offset="1" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="116" fill="url(#glow)"/>
+  <!-- document -->
+  <path d="M132 92h146l76 76v230a26 26 0 0 1-26 26H132a26 26 0 0 1-26-26V118a26 26 0 0 1 26-26z" fill="url(#pg)"/>
+  <path d="M278 92v52a24 24 0 0 0 24 24h52z" fill="#c7d2fe"/>
+  <rect x="144" y="140" width="92" height="22" rx="11" fill="#4f46e5"/>
+  <rect x="144" y="186" width="164" height="14" rx="7" fill="#a5b4fc"/>
+  <rect x="144" y="214" width="132" height="14" rx="7" fill="#a5b4fc"/>
+  <rect x="144" y="256" width="120" height="14" rx="7" fill="#c7d2fe"/>
+  <rect x="144" y="284" width="96" height="14" rx="7" fill="#c7d2fe"/>
+  <!-- smith's hammer, mid-strike on the page edge -->
+  <g transform="translate(334 352) rotate(30)">
+    <rect x="-15" y="-196" width="30" height="190" rx="14" fill="url(#handle)"/>
+    <rect x="-15" y="-196" width="30" height="28" rx="13" fill="#78350f"/>
+    <path d="M-80 -30h104l58 14v32l-58 14h-104a12 12 0 0 1-12-12v-36a12 12 0 0 1 12-12z" fill="url(#head)" stroke="#78350f" stroke-opacity=".4" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="-92" y="-30" width="22" height="60" rx="9" fill="#fbbf24"/>
+    <rect x="-17" y="-30" width="34" height="60" fill="#b45309" opacity=".35"/>
+  </g>
+  <!-- sparks -->
+  <g fill="#fde68a">
+    <path d="M246 372l8 19 19 8-19 8-8 19-8-19-19-8 19-8z"/>
+    <circle cx="222" cy="342" r="7"/>
+    <circle cx="286" cy="438" r="6"/>
+    <circle cx="232" cy="430" r="4.5"/>
+    <circle cx="300" cy="404" r="4"/>
+  </g>
+</svg>
