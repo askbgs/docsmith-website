@@ -3,6 +3,7 @@
  * Docsmith website – tiny static server for Railway (no dependencies).
  *   /            -> public/index.html
  *   /privacy     -> public/privacy.html   (/privacy.html redirects here)
+ *   /buy         -> public/buy.html       (purchase form, ?plan=pro|enterprise)
  *   /assets/*    -> public/assets/*       (cached for a week)
  *   /health      -> "ok"                  (Railway health check)
  */
@@ -20,8 +21,8 @@ const TYPES = {
   '.svg': 'image/svg+xml', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp',
   '.ico': 'image/x-icon', '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.json': 'application/json'
 };
-const ROUTES = { '/': 'index.html', '/privacy': 'privacy.html', '/demo': 'demo/index.html', '/demo/': 'demo/index.html' };
-const REDIRECTS = { '/index.html': '/', '/privacy.html': '/privacy', '/privacy-policy': '/privacy' };
+const ROUTES = { '/': 'index.html', '/privacy': 'privacy.html', '/buy': 'buy.html', '/demo': 'demo/index.html', '/demo/': 'demo/index.html' };
+const REDIRECTS = { '/index.html': '/', '/privacy.html': '/privacy', '/privacy-policy': '/privacy', '/buy.html': '/buy' };
 
 const SECURITY = {
   'Content-Security-Policy': [

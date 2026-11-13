@@ -124,7 +124,7 @@ EMAIL = 'bgowryshangar@gmail.com'
 page = page.replace('[sales@yourdomain]', EMAIL).replace('[support@yourdomain]', EMAIL)
 page = page.replace('href="[PRIVACY URL]"', 'href="/privacy"')
 page = page.replace('href="[DOCS URL]"', 'href="' + GUIDE + '" target="_blank" rel="noopener"')
-page = page.replace('href="[PORTAL URL]"', 'href="' + DOWNLOADS + '" target="_blank" rel="noopener"')
+page = re.sub(r'\s*<a href="\[PORTAL URL\]"[^>]*>[^<]*</a>', '', page)   # no public downloads link: files go out by e-mail after the trial form
 # live demo: the in-browser designer at /demo
 page = page.replace('href="[DEMO URL]"', 'href="/demo"')
 page = re.sub(r'\s*<a href="\[TERMS URL\]"[^>]*>[^<]*</a>', '', page)
@@ -132,6 +132,9 @@ page = re.sub(r'\s*<a href="\[LINKEDIN URL\]"[^>]*>LinkedIn</a>', '', page)
 page = re.sub(r'\s*<a href="https://wa.me/\[YOUR NUMBER\]"[^>]*>WhatsApp \[\+94 XX XXX XXXX\]</a>', '', page)
 page = page.replace('Prefer to talk first? WhatsApp <a href="https://wa.me/[YOUR NUMBER]">[+94 XX XXX XXXX]</a> or e-mail',
                     'Prefer to talk first? E-mail')
+# purchase buttons -> /buy
+page = re.sub(r'<a href="#trial"([^>]*)>Buy Pro</a>', r'<a href="/buy?plan=pro"\1>Buy Pro</a>', page)
+page = re.sub(r'<a href="#contact"([^>]*)>Contact sales</a>', r'<a href="/buy?plan=enterprise"\1>Contact sales</a>', page)
 page = page.replace('[Company name], [City], Sri Lanka', 'Sri Lanka')
 page = page.replace('© 2026 [Company name].', '© 2026 Docsmith.')
 page = page.replace('Not there in 5 minutes? Look in spam or WhatsApp us.', 'Not there in 5 minutes? Look in your spam folder or e-mail us.')
