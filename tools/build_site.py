@@ -118,7 +118,7 @@ page = page.replace('<img src="/assets/invoice.jpg"', '<img src="/assets/invoice
 page = page.replace('<img src="/assets/payslip.jpg"', '<img src="/assets/payslip.jpg" loading="lazy"')
 
 # placeholders
-GUIDE = 'https://drive.google.com/file/d/15j_RliRsON7jLr6F3n4nDyIJ9zrw7fb-/view'
+GUIDE = 'https://drive.google.com/file/d/1soMgrlz3duRIfWHdyO6UpsrHzfJPc-TG/view'
 DOWNLOADS = 'https://drive.google.com/drive/folders/1zkcE62UhsYtb12w--aUBu2SkMbH20Jx5'
 EMAIL = 'bgowryshangar@gmail.com'
 page = page.replace('[sales@yourdomain]', EMAIL).replace('[support@yourdomain]', EMAIL)
